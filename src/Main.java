@@ -46,5 +46,27 @@ public class Main {
         } catch (UnsupportedOperationException e) {
             System.out.println("\nCannot add items inside a sword!");
         }
+
+        // Test an empty bag
+        Bag emptyBag = new Bag("Empty Bag", 0.5);
+
+        System.out.println("\n=== EMPTY BAG TEST ===");
+        emptyBag.displayInfo();
+        System.out.println("Weight: " + emptyBag.getWeight() + " lbs");
+
+        // Test removing an item
+        Bag testBag = new Bag("Test Bag", 1.0);
+        Item apple = new Item("Apple", 2.0);
+
+        testBag.add(apple);
+
+        System.out.println("\n=== REMOVE ITEM TEST ===");
+        System.out.println("Before: " + testBag.getWeight() + " lbs");
+
+        testBag.remove(apple);
+
+        System.out.println("After: " + testBag.getWeight() + " lbs");
+
     }
+
 }
