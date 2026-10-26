@@ -1,2 +1,2 @@
 # Journal
-Write your Journal questions and notes here.
+In this phase I created the base InventoryComponent class and individual items. From what I understand, using UnsupportedOperationException lets each class only use the methods it actually needs. This also keeps the same interface available for everything, so the main program can treat items and bags the same way later.
