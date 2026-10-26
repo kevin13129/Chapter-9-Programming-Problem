@@ -1,2 +1,2 @@
 # Journal
-In this phase I created the base InventoryComponent class and individual items. From what I understand, using UnsupportedOperationException lets each class only use the methods it actually needs. This also keeps the same interface available for everything, so the main program can treat items and bags the same way later.
+In this phase I created the Bag class so it can hold different items. The Item class just returns its own weight, while Bag adds up its weight along with everything inside it. From what I understand, recursion and polymorphism make this work because the bag can call getWeight() on anything inside without needing to know if it's another bag or a regular item.

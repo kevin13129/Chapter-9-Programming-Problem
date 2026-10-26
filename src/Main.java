@@ -5,10 +5,13 @@ public class Main {
         InventoryComponent sword = new Item("Sword", 5.0);
         InventoryComponent potion = new Item("Health Potion", 1.0);
 
-        sword.displayInfo();
-        potion.displayInfo();
+        Bag pouch = new Bag("Belt Pouch", 0.5);
 
-        System.out.println("Sword weight: " + sword.getWeight());
-        System.out.println("Potion weight: " + potion.getWeight());
+        pouch.add(sword);
+        pouch.add(potion);
+
+        pouch.displayInfo();
+
+        System.out.println("Total Weight: " + pouch.getWeight() + " lbs");
     }
 }
